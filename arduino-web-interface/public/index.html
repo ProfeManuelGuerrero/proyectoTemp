@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control temperatura</title>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1 class="my-4">Monitor de temperatura arduino</h1>
+  </header>
+  <section>
+    <div class="container-sm ">
+      <div id="temperature"  class="alert alert-info">cargando...</div>
+      <div id="humidity" class="alert alert-info info-box">Loading...</div>
+      <div id="threshold" class="alert alert-warning">Cargando...</div>
+      <div  class="input-group  input-group-sm mb-3">
+        <input type="number" id="threshold-input" class="form-control temperaturaUmbral form-control-sm" placeholder="Ingresar temperatura umbral">
+        <div class="input-group-append">
+          <button class="button btn btn-primary btn-sm" onclick="setThreshold()">Ingresar umbral °C</button>
+        </div>      
+      </div>
+      <div id="Mensajes"></div>
+    </div>
+  </section>
+  <footer>
+    <div class="container-footer">
+      <p>&copy; 2024 Monitor de temperatura Arduino. Proyecto abierto.</p>
+      <p class="small-text">Desarrollado por especialidad de programación, Liceo bicentenario instituto comercial.</p>
+    </div>
+  </footer>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
